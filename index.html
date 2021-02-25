@@ -32,14 +32,17 @@
         </p>
       </header>
       <main>
-        <button class="btnTryIt">
-          <span class="daysFree">Try it free 7 days </span> then $20/mo.
-          thereafter
-        </button>
+        <div class="tryIt">
+          <p>
+            <span class="daysFree">Try it free 7 days </span> then $20/mo.
+            thereafter
+          </p>
+        </div>
 
         <form id="frmFreeTrial" novalidate>
           <div class="divInput">
             <input
+              autocomplete="off"
               required
               id="firtName"
               type="text"
@@ -47,6 +50,7 @@
               pattern="[a-zA-Z\s]*"
             />
             <span class="error" aria-live="polite"></span>
+            <img id="iconErrorFirstName" class="iconErrorDisable" src="images/icon-error.svg" alt="Error icon">
           </div>
 
           <div class="divInput">
@@ -58,6 +62,8 @@
               pattern="[a-zA-Z\s]*"
             />
             <span class="error" aria-live="polite"></span>
+            <img id="iconErrorLastName" class="iconErrorDisable" src="images/icon-error.svg" alt="Error icon">
+
           </div>
 
           <div class="divInput">
@@ -68,6 +74,8 @@
               placeholder="Email Address"
             />
             <span class="error" aria-live="polite"></span>
+            <img id="iconErrorEmail" class="iconErrorDisable" src="images/icon-error.svg" alt="Error icon">
+
           </div>
 
           <div class="divInput">
@@ -79,6 +87,8 @@
               placeholder="Password"
             />
             <span class="error" aria-live="polite"></span>
+            <img id="iconErrorPassword" class="iconErrorDisable" src="images/icon-error.svg" alt="Error icon">
+
           </div>
 
           <button id="btnSubmit">Claim your free trial</button>
@@ -96,7 +106,8 @@
         Challenge by
         <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
           >Frontend Mentor</a
-        >. Coded by <a href="https://www.linkedin.com/in/freud-alexandro/">Freud Múnera</a>.
+        >. Coded by
+        <a href="https://www.linkedin.com/in/freud-alexandro/">Freud Múnera</a>.
       </p>
     </footer>
     <script src="logic.js"></script>
