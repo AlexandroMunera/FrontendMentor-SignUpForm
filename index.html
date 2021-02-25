@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+
+    <title>Frontend Mentor | Intro component with sign up form</title>
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <h1>Learn to code by watching others</h1>
+
+        <p id="description">
+          See how experienced developers solve problems in real-time. Watching
+          scripted tutorials is great, but understanding how developers think is
+          invaluable.
+        </p>
+      </header>
+      <main>
+        <button class="btnTryIt">
+          <span class="daysFree">Try it free 7 days </span> then $20/mo.
+          thereafter
+        </button>
+
+        <form id="frmFreeTrial" novalidate>
+          <div class="divInput">
+            <input
+              required
+              id="firtName"
+              type="text"
+              placeholder="First Name"
+            />
+            <span class="error" aria-live="polite"></span>
+          </div>
+
+          <div class="divInput">
+            <input
+              required
+              id="lastName"
+              type="text"
+              placeholder="Last Name"
+            />
+            <span class="error" aria-live="polite"></span>
+          </div>
+
+          <div class="divInput">
+            <input
+              required
+              id="email"
+              type="email"
+              placeholder="Email Address"
+            />
+            <span class="error" aria-live="polite"></span>
+          </div>
+
+          <div class="divInput">
+            <input
+              minlength="7"
+              required
+              id="password"
+              type="password"
+              placeholder="Password"
+            />
+            <span class="error" aria-live="polite"></span>
+          </div>
+
+          <button id="btnSubmit">Claim your free trial</button>
+
+          <span class="caption">
+            By clicking the button, you are agreeing to our
+            <span class="terms">Terms and Services</span>
+          </span>
+        </form>
+      </main>
+    </div>
+
+    <footer>
+      <p class="attribution">
+        Challenge by
+        <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+          >Frontend Mentor</a
+        >. Coded by <a href="#">Freud Múnera</a>.
+      </p>
+    </footer>
+    <script src="logic.js"></script>
+  </body>
+</html>
